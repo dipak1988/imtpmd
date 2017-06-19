@@ -4,7 +4,15 @@
         "source": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
 ]
