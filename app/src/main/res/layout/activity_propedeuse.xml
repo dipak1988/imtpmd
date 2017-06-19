@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/propedeuse_layout"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.solutions.guidedrecovery.ecapp.PropedeuseActivity"
     android:weightSum="1">
 
-    <!--<ExpandableListView-->
-        <!--android:id="@+id/lvExp"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_width="match_parent"/>-->
 
     <TextView
         android:id="@+id/periode_veld"
@@ -24,63 +21,42 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
+    <TextView
+        android:id="@+id/EC_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="TextView"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/Next_periode"
+        android:layout_alignLeft="@+id/Next_periode"
+        android:layout_alignStart="@+id/Next_periode" />
+
+    <Button
+        android:id="@+id/Next_periode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="CheckBox"
-        android:layout_below="@+id/periode_veld"
+        android:layout_gravity="bottom|left"
+        android:text="Volgende"
+        android:layout_marginBottom="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="138dp"
+        android:layout_marginEnd="138dp" />
+
+    <LinearLayout
+        android:id="@+id/checkbox_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignLeft="@+id/periode_veld"
-        android:layout_alignStart="@+id/periode_veld" />
+        android:layout_alignStart="@+id/periode_veld"
+        android:layout_below="@+id/periode_veld"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/EC_score"
+        android:layout_alignRight="@+id/Next_periode"
+        android:layout_alignEnd="@+id/Next_periode"></LinearLayout>
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox"
-        android:layout_below="@+id/checkBox"
-        android:layout_marginTop="17dp"
-        android:text="CheckBox" />
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="CheckBox"
-        android:layout_below="@+id/checkBox2"
-        android:layout_alignLeft="@+id/checkBox2"
-        android:layout_alignStart="@+id/checkBox2" />
-
-    <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="CheckBox"
-        android:layout_below="@+id/checkBox3"
-        android:layout_alignLeft="@+id/checkBox3"
-        android:layout_alignStart="@+id/checkBox3" />
-
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="CheckBox"
-        android:layout_below="@+id/checkBox4"
-        android:layout_alignLeft="@+id/checkBox4"
-        android:layout_alignStart="@+id/checkBox4" />
-
-    <CheckBox
-        android:id="@+id/checkBox6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="CheckBox"
-        android:layout_below="@+id/checkBox5"
-        android:layout_alignLeft="@+id/checkBox5"
-        android:layout_alignStart="@+id/checkBox5" />
 </RelativeLayout>
