@@ -4,24 +4,24 @@
         "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Daan\\.android\\build-cache\\8c17a737258770a36b810d09831c366652daf772\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\notification_action.xml"
+        "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Daan\\.android\\build-cache\\8c17a737258770a36b810d09831c366652daf772\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
@@ -104,10 +104,6 @@
         "source": "C:\\Users\\Daan\\.android\\build-cache\\8c17a737258770a36b810d09831c366652daf772\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
-        "source": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\src\\main\\res\\layout\\list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\Daan\\.android\\build-cache\\8c17a737258770a36b810d09831c366652daf772\\output\\res\\layout\\notification_action_tombstone.xml"
     },
@@ -130,6 +126,10 @@
     {
         "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\Daan\\.android\\build-cache\\8c17a737258770a36b810d09831c366652daf772\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item.xml",
+        "source": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\src\\main\\res\\layout\\item.xml"
     },
     {
         "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -160,10 +160,6 @@
         "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_group.xml",
-        "source": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\src\\main\\res\\layout\\list_group.xml"
-    },
-    {
         "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Users\\Dip\\.android\\build-cache\\5a194a86224d43edbd5981e1c2f40d4e70035dad\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
@@ -182,6 +178,10 @@
     {
         "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Daan\\.android\\build-cache\\8c17a737258770a36b810d09831c366652daf772\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_eind.xml",
+        "source": "C:\\Users\\Daan\\Android_projects\\imtpmd\\app\\src\\main\\res\\layout\\activity_eind.xml"
     },
     {
         "merged": "C:\\Users\\Dip\\Desktop\\ECApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",

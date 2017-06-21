@@ -1,9 +1,11 @@
 package com.solutions.guidedrecovery.ecapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import android.app.Activity;
 import android.os.Bundle;
@@ -19,11 +21,13 @@ import android.widget.ExpandableListView.OnGroupClickListener;
 import android.widget.ExpandableListView.OnGroupCollapseListener;
 import android.widget.ExpandableListView.OnGroupExpandListener;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import static com.solutions.guidedrecovery.ecapp.R.id.EC_score;
+import static com.solutions.guidedrecovery.ecapp.R.id.list_item;
 
 
 /**
@@ -32,31 +36,28 @@ import static com.solutions.guidedrecovery.ecapp.R.id.EC_score;
 
 public class PropedeuseActivity extends AppCompatActivity {
 
+    ArrayList<Vak> products = new ArrayList<Vak>();
+    ListAdapter boxAdapter;
+
     CheckBox box;
     int EC = 0;
     private TextView periode;
     private Boolean button_check;
     private TextView EC_veld;
     private Button volgende;
-    private int volgende_periode = 0;
-    private CheckBox box1;
-    private CheckBox box2;
-    private CheckBox box3;
-    private CheckBox box4;
-    private CheckBox box5;
-    private CheckBox box6;
-
+    private int volgende_periode = 1;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_propedeuse);
-        periode = (TextView) findViewById(R.id.periode_veld);
-        EC_veld = (TextView) findViewById(R.id.EC_score);
 
-        volgende = (Button) findViewById(R.id.Next_periode);
-        final LinearLayout prop_layout = (LinearLayout) findViewById(R.id.checkbox_layout);
+
+        boxAdapter = new ListAdapter(this, products);
+
+        ListView lvMain = (ListView) findViewById(R.id.lvMain);
+        lvMain.setAdapter(boxAdapter);
 
         final List<String> Periode_1 = new ArrayList<String>();
 
@@ -92,166 +93,134 @@ public class PropedeuseActivity extends AppCompatActivity {
         Periode_4.add("iarch");
         Periode_4.add("inet");
 
+
+        periode = (TextView) findViewById(R.id.periode_veld);
+        EC_veld = (TextView) findViewById(R.id.EC_score);
+        volgende = (Button) findViewById(R.id.Next_periode);
+
+        final LinearLayout prop_layout = (LinearLayout) findViewById(R.id.checkbox_layout);
+
+
+
+        List<CheckBox> list_1 = periodes(Periode_1, prop_layout);
+
+
         volgende.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                Log.d("check","jjjjjjjjj");
+
                 volgende_periode++;
 
-                if (volgende_periode == 1) {
-                    periodes(Periode_2,prop_layout);
-                }
-                else if(volgende_periode == 2) {
-                    periodes(Periode_3,prop_layout);
-                }
-                else if(volgende_periode == 3) {
-                    periodes(Periode_4,prop_layout);
+                if (volgende_periode == 2) {
+                    List<CheckBox> list_2 = periodes(Periode_2, prop_layout);
+                    getEC(list_2);
+                } else if (volgende_periode == 3) {
+                    List<CheckBox> list_3 = periodes(Periode_3, prop_layout);
+                    getEC(list_3);
+                } else if (volgende_periode == 4) {
+                    List<CheckBox> list_4 = periodes(Periode_4, prop_layout);
+                    getEC(list_4);
+                } else if (volgende_periode == 5) {
+                    Intent i = new Intent(PropedeuseActivity.this, EindActivity.class);
+                    i.putExtra("EC's ", EC);
+                    startActivity(i);
                 }
 
 
-                Log.d("dwad", String.format("value = %d",volgende_periode));
             }
         });
 
 
-
-
-
-                periode.setText(("Periode: " + 1));
-
-                for (int k = 0; k < Periode_1.size(); k++) {
-                    box = new CheckBox(this);
-                    box.setId(k);
-                    box.setText(Periode_1.get(k));
-                    box.setOnClickListener((getEC(box, box.isSelected())));
-                    prop_layout.addView(box);
-                    EC_veld.setText((EC_score + "/ 90"));
-                    Log.d("check","3333333");
-
-                }
-
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-public void periodes (List<String> Periode,LinearLayout prop_layout){
-
-
-    if (volgende_periode == 1) {
-            prop_layout.removeAllViews();
-            periode.setText(("Periode: " + 2));
-
-            for (int k = 0; k < Periode.size(); k++) {
-        box = new CheckBox(this);
-        box.setId(k);
-        box.setText(Periode.get(k));
-        box.setOnClickListener((getEC(box, box.isSelected())));
-        prop_layout.addView(box);
-        EC_veld.setText((EC_score + "/ 90"));
-        Log.d("check","4444444444");
-
-        }
-        }
-
-    if (volgende_periode == 2) {
-        prop_layout.removeAllViews();
-
-        periode.setText(("Periode: " + 3));
-
-        for (int k = 0; k < Periode.size(); k++) {
-            box = new CheckBox(this);
-            box.setId(k);
-            box.setText(Periode.get(k));
-            box.setOnClickListener((getEC(box, box.isSelected())));
-            prop_layout.addView(box);
-            EC_veld.setText((EC_score + "/ 90"));
-            Log.d("check","555555555");
-
-        }
-
-    }
-
-    if (volgende_periode == 3) {
-        prop_layout.removeAllViews();
-        periode.setText(("Periode: " + 4));
-
-        for (int k = 0; k < Periode.size(); k++) {
-            box = new CheckBox(this);
-            box.setId(k);
-            box.setText(Periode.get(k));
-            box.setOnClickListener((getEC(box, box.isSelected())));
-            prop_layout.addView(box);
-            EC_veld.setText((EC_score + "/ 90"));
-
-        }
-
     }
 
 
-}
+    public List<CheckBox> periodes(List<String> Periode, LinearLayout prop_layout) {
 
 
+        List<CheckBox> list = new LinkedList<>();
+        prop_layout.removeAllViews();
+        periode.setText(("Periode: " + volgende_periode));
+
+        for (int k = 0; k < Periode.size(); k++) {
+
+            box = new CheckBox(this);
+            box.setId(k);
+            box.setText(Periode.get(k));
+            list.add(box);
+            prop_layout.addView(box);
+            box.setOnClickListener((getEC(list)));
+
+            EC_veld.setText((EC + "/ 90"));
 
 
+        }
 
-    View.OnClickListener getEC (final Button button, final Boolean check  ){
-        return new View.OnClickListener(){
-            public void onClick(View v){
-                if(button.getText().equals("iipfit") || button.getText().equals("iipsen") ||  button.getText().equals("iipbdam") || button.getText().equals("iipmedt") ){
-                    if (check == true){
 
-                        EC += 10;
+        return list;
+
+    }
+
+    View.OnClickListener getEC(final List<CheckBox> list) {
+        return new View.OnClickListener() {
+            public void onClick(View v) {
+
+                for (CheckBox cb : list) {
+
+                    if (cb.isChecked()) {
+                        cb.getId();
                     }
-                    else
-                        EC -= 10;
                 }
-               else if (button.getText().equals("iopr1") || button.getText().equals("iopr2")){
-                    if (check == true){
 
-                        EC += 4;
+                for (CheckBox cb : list) {
+                    String vak = cb.getText().toString();
+
+
+                    if (vak.equals("iipfit") || vak.equals("iipsen") || vak.equals("iipbdam") || vak.equals("iipmedt")) {
+
+                        if (cb.isChecked()) {
+
+                            EC += 10;
+                            EC_veld.setText((EC + "/ 90"));
+                        }
+                    } else if (vak.equals("iopr1") || vak.equals("iopr2")) {
+
+                        if (cb.isChecked()) {
+                            EC += 4;
+                            EC_veld.setText((EC + "/ 90"));
+                        }
+
+                    } else if (vak.equals("ipodm") || vak.equals("ipomedt") || vak.equals("ipose") || vak.equals("ipofit")) {
+
+                        if (cb.isChecked()) {
+                            EC += 2;
+                            EC_veld.setText((EC + "/ 90"));
+                        }
+
+                    } else if (vak.equals("islp")) {
+
+                        if (cb.isChecked()) {
+                            EC += 1;
+                            EC_veld.setText((EC + "/ 90"));
+                        }
+
+                    } else if (vak.equals("iarch") || vak.equals("iibpm") || vak.equals("ihbo") || vak.equals("iwdr") ||
+                            vak.equals("irdb") || vak.equals("iibui") || vak.equals("inet") || vak.equals("imuml") ||
+                            vak.equals("ifit") || vak.equals("iprov") || vak.equals("icommp")) {
+
+                        if (cb.isChecked()) {
+                            Log.d("vak", vak);
+                            EC += 3;
+                            EC_veld.setText((EC + "/ 90"));
+                        }
                     }
-                    else
-                        EC -= 4;
-
                 }
-                else if (button.getText().equals("ipodm") || button.getText().equals("ipomedt") || button.getText().equals("ipose") || button.getText().equals("ipofit")){
-                    if (check == true){
-
-                        EC += 2;
-                    }
-                    else
-                        EC -= 2;
-
-                }
-                else  if (button.getText().equals("islp") ){
-
-                    if (check == true){
-
-                        EC += 1;
-                    }
-                    else
-                        EC -= 1;
-
-                }
-                else
-                    if (check == true){
-
-                        EC += 3;
-                }
-                    else
-                        EC -= 3;
 
             }
-
         };
-
     }
 }
+
+
+
+
+
+

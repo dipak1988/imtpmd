@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xm
 		INJECTED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:5:5-30:19
+ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:5:5-40:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Daan\.android\build-cache\8c17a737258770a36b810d09831c366652daf772\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Daan\.android\build-cache\741b71315277b934ff0b386a36f9d345a927c982\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Daan\.android\build-cache\9e9e92d11e1177094297122be1dd7d35a464198f\output\AndroidManifest.xml:29:5-20
@@ -67,6 +67,18 @@ category#android.intent.category.DEFAULT
 ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:26:17-76
 	android:name
 		ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:26:27-73
+activity#com.solutions.guidedrecovery.ecapp.EindActivity
+ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:30:9-38:20
+	android:label
+		ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:32:13-46
+	android:name
+		ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:31:13-41
+intent-filter#android.intent.category.DEFAULT+com.solutions.guidedrecovery.ecapp.EindActivity
+ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:33:13-37:29
+action#com.solutions.guidedrecovery.ecapp.EindActivity
+ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:34:17-90
+	android:name
+		ADDED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml:34:25-87
 uses-sdk
 INJECTED from C:\Users\Daan\Android_projects\imtpmd\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Daan\.android\build-cache\8c17a737258770a36b810d09831c366652daf772\output\AndroidManifest.xml:21:5-23:78

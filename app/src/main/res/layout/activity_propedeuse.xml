@@ -49,14 +49,23 @@
         android:id="@+id/checkbox_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/periode_veld"
-        android:layout_alignStart="@+id/periode_veld"
         android:layout_below="@+id/periode_veld"
         android:layout_marginTop="32dp"
         android:orientation="vertical"
         android:layout_above="@+id/EC_score"
         android:layout_alignRight="@+id/Next_periode"
-        android:layout_alignEnd="@+id/Next_periode"></LinearLayout>
+        android:layout_alignEnd="@+id/Next_periode"
+        android:layout_alignLeft="@+id/periode_veld"
+        android:layout_alignStart="@+id/periode_veld">
+
+        <ListView
+            android:id="@+id/lvMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </ListView>
+
+    </LinearLayout>
 
 
 </RelativeLayout>
